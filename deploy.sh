@@ -8,13 +8,13 @@ echo 'Jekyll build...'
 bundle exec jekyll build
 
 echo 'Testing htmlproof...'
-bundle exec htmlproof ./_site --href-ignore "#","/simplest/" --disable-external
+bundle exec htmlproofer ./_site --disable-external
 
 cd ${HTML_FOLDER}
 
 # config
-git config --global user.email "nandomoreira.me@gmail.com"
-git config --global user.name "Fernando Moreira"
+git config --global user.email "tnantoka@borneet.com"
+git config --global user.name "Tatsuya Tobioka"
 
 # deploy
 git init
